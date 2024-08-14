@@ -13,7 +13,7 @@ def translate(text):
             'English': text,
             'Chinese': zh,
             'Latin': translator.translate(text, src=input_lang, dest='la').text,
-            'Esperanto': translator.translate(text, src=input_lang, dest='eo').pronunciation or text,
+            'Esperanto': translator.translate(text, src=input_lang, dest='eo').text,
             'Russian': translator.translate(text, src=input_lang, dest='ru').pronunciation or text,
             'Hindi': translator.translate(text, src=input_lang, dest='hi').pronunciation or text,
             'Arabic': translator.translate(text, src=input_lang, dest='ar').pronunciation or text,
